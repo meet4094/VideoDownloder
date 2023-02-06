@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "b5741547-30b9-4e4a-8288-e800c33926ff",
+		"name": "Video Download",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23568815"
+	},
+	"item": [
+		{
+			"name": "Api Call",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "o6cBY9XDMnPzgum",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_id",
+							"value": "TEST",
+							"type": "text"
+						},
+						{
+							"key": "package_name",
+							"value": "TEST",
+							"type": "text"
+						},
+						{
+							"key": "app_version",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "app_version_code",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{videodownloaderurl}}/api/apicall",
+					"host": [
+						"{{videodownloaderurl}}"
+					],
+					"path": [
+						"api",
+						"apicall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buttons",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "o6cBY9XDMnPzgum",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "app_token",
+							"value": "YTY1bVLTqSI7KVh",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "TEST",
+							"type": "text"
+						},
+						{
+							"key": "app_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{videodownloaderurl}}/api/button",
+					"host": [
+						"{{videodownloaderurl}}"
+					],
+					"path": [
+						"api",
+						"button"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Video Download",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "o6cBY9XDMnPzgum",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "app_token",
+							"value": "YTY1bVLTqSI7KVh",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "TEST",
+							"type": "text"
+						},
+						{
+							"key": "app_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "download_url",
+							"value": "https://youtu.be/qSzFDC53f1Q",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{videodownloaderurl}}/api/video",
+					"host": [
+						"{{videodownloaderurl}}"
+					],
+					"path": [
+						"api",
+						"video"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
